@@ -8,6 +8,18 @@
     "Antistatique.net"
   ],
   "license": "MIT",
+  "main": [
+    "./styleguide/index.html",
+    "./build/css/vendors.css",
+    "./build/css/admin.css",
+    "./build/css/print.css",
+    "./build/js/vendors.min.js",
+    "./build/js/main.js",
+    "./build/fonts/*.eot",
+    "./build/fonts/*.svg",
+    "./build/fonts/*.ttf",
+    "./build/fonts/*.woff"
+  ],
   "ignore": [
     "**/.*",
     "node_modules",
