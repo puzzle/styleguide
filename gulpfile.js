@@ -154,7 +154,7 @@ gulp.task('print', function() {
  * With error reporting on compiling (so that there's no crash)
  */
 gulp.task('scripts', function() {
-  return gulp.src(['src/assets/js/*.js'])
+  return gulp.src(['src/assets/js/*.js','!src/assets/js/shame.js'])
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish'))
     .pipe($.concat('main.js'))

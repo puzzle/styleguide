@@ -17495,6 +17495,9 @@ $('.close').removeAttr('aria-hidden').wrapInner('<span aria-hidden="true"></span
   if (typeof define === 'function' && define.amd) {
     // AMD
     define(['jquery'], factory);
+  } else if (typeof exports === 'object') {
+    // Node/CommonJS
+    module.exports = factory(require('jquery'));
   } else {
     // Browser globals
     factory(jQuery);
