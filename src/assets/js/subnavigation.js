@@ -29,13 +29,13 @@ function subNavInit($) {
 
   var $drilldown = $('.drilldown[class*=col-]');
 
-  if ($(window).width() <= 767 && !$drilldown.hasClass('collapse-enabled')) {
+  if (window.matchMedia('(max-width: 767px)').matches && !$drilldown.hasClass('collapse-enabled')) {
     $drilldown
       .addClass('collapse-enabled')
       .find('.drilldown-container')
       .addClass('collapse')
       .attr('id', 'collapseSubNav');
-  } else if ($(window).width() > 767 && $drilldown.hasClass('collapse-enabled')) {
+  } else if (window.matchMedia('(min-width: 768px)').matches && $drilldown.hasClass('collapse-enabled')) {
     $drilldown
       .removeClass('collapse-enabled')
       .find('.drilldown-container')
