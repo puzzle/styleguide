@@ -1,8 +1,8 @@
 {
   "name": "swiss-styleguide",
   "description": "Swiss Confederation Web Guidelines",
-  "version": "3.0.3",
-  "homepage": "http://swiss.github.io/styleguide",
+  "version": "3.0.4",
+  "homepage": "https://github.com/puzzle/swiss-styleguide",
   "authors": [
     "Liip.ch",
     "Antistatique.net"
